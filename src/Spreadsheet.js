@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Handsontable from 'handsontable';
 import {getSettings} from './setting.js';
-import 'handsontable/dist/handsontable.full.css';
+
 import './Spreadsheet.scss';
 
 const propTypes = {
