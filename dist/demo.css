@@ -1,0 +1,19 @@
+@import url(../node_modules/handsontable/dist/handsontable.full.css);
+.temp-main {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background: rebeccapurple; }
+
+.demoPadding {
+  background: #eceff1;
+  padding: 10px; }
+  .demoPadding button {
+    margin: auto 5px; }
+  .demoPadding .divider {
+    margin: 6px 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0; }
+
+/*# sourceMappingURL=demo.css.map */

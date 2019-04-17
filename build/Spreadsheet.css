@@ -1,0 +1,6 @@
+@import url(../node_modules/handsontable/dist/handsontable.full.css);
+.temp-main {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background: rebeccapurple; }

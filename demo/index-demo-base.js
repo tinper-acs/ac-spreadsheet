@@ -4,7 +4,6 @@ import { Con, Row, Col } from 'bee-layout';
 import { Panel } from 'bee-panel';
 import Drawer from 'bee-drawer';
 import Clipboard from 'bee-clipboard'; 
-import './demo.scss'
 
 
 
@@ -80,4 +79,4 @@ class DemoGroup extends Component {
     }
 }
 
-ReactDOM.render(<DemoGroup/>, document.getElementById('root'));
+ReactDOM.render(<DemoGroup/>, document.getElementById('tinperBeeDemo'));

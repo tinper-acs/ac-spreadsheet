@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Handsontable from 'handsontable';
 import {getSettings} from './setting.js';
 
-import './Spreadsheet.scss';
+// import './Spreadsheet.scss';
 
 const propTypes = {
 }

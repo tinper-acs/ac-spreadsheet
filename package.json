@@ -1,35 +1,41 @@
 {
   "name": "ac-spreadsheet",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clear": "rimraf dist",
-    "clear:gh-pages": "rimraf ghpages",
-    "build": "npm run clear && webpack --config config/webpack.config.prod.js",
-    "dev": "webpack-dev-server --config config/webpack.config.dev.js",
-    "lint": "eslint --ext .js --ext .jsx src/",
-    "lint-fix": "eslint --fix --ext .js --ext .jsx src/",
-    "precommit": "npm run lint",
-    "es": "rm -rf es && babel src -d es --no-comments",
-    "deploy": "npm run clear:gh-pages && webpack --config config/webpack.config.ghpages.js"
-  },
-  "bugs": {
-    "url": "https://github.com/tinper-acs/ac-spreadsheet/issues"
-  },
-  "homepage": "https://github.com/tinper-acs/ac-spreadsheet#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tinper-acs/ac-spreadsheet.git"
-  },
-  "author": "17600056834",
-  "license": "MIT",
-  "files": [
-    "package.json",
-    "dist",
-    "README.md"
+  "description": "ac-spreadsheet ui component for react",
+  "keywords": [
+    "react",
+    "react-component",
+    "ac-spreadsheet",
+    "iuap-design",
+    "tinper-bee",
+    "Button"
   ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/tinper-acs/ac-spreadsheet.git",
+  "author": "Yonyou FED",
+  "repository": "http://github.com/tinper-bee/ac-spreadsheet",
+  "bugs": "https://github.com/tinper-acs/ac-spreadsheet.git/issues",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "config": {
+    "port": 3000,
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "dev": "bee-tools run start",
+    "build": "bee-tools run build",
+    "lint": "bee-tools-test run lint",
+    "test": "bee-tools-test run test",
+    "chrome": "bee-tools-test run chrome",
+    "coveralls": "bee-tools-test run coverage",
+    "browsers": "bee-tools-test run browsers",
+    "pub": "bee-tools run pub",
+    "changelog": "bee-tools run changelog"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -89,6 +95,6 @@
     "prop-types": "^15.6.0"
   },
   "dependencies": {
-    "handsontable": "^5.0.1"
+    "handsontable": "^5.0.2"
   }
 }
